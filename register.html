@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>registration</title>
+</head>
+<body>
+    <header>
+        <div class="registration-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">shudhanshu kumar</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="link"><a href="index.html">Home</a></li>
+                        <li class="link"><a href="about.html">about</a></li>
+                        <li class="link"><a href="#.html">#</a></li>
+                        <li class="link"><a href="registation.html">registation</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        
+        <main>
+            <section class="user-container login-section-display">
+             <div class="registration">
+                 <div class="grid-two--column">
+                      <div class="form-text">
+                       <h2>welcome back</h2>
+                       <p>to keep connected with us please login with your personal information</p>
+                       <button class="login-btn">Login Here</button>
+                      </div>
+                        <div class="registration-form">
+                            <h2>Create account</h2>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i>
+                                    
+                                </a>
+                                <a href="https://discord.gg/MdScmCsua6" target="_blank">
+                                <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </div>
+                            <p> or use your emails for registation</p>
+
+                            <form action="#">
+                                <div class="input-field">
+                                    <label for="usernane">
+                                     <input type="text" name="#" id="usernane" placeholder="Name">
+                                    </label>
+                                </div>
+
+
+                                <div class="input-field">
+                                       <label for="Email">
+                                        <input type="email" name="#" id="Email" placeholder="Email">
+                                       </label>
+                                </div>
+
+
+                                <div class="input-field">
+                                       <label for="password">
+                                        <input type="password" name="#" id="password" placeholder="password">
+                                       </label>
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="submit" value="register">
+                                </div>
+                            </form>
+                        </div>
+                 </div>
+             </div>
+            
+             <div class="login">
+                <div class="grid-two--column">
+                    <div class="form-text">
+                     <h2>Hello Friend!</h2>
+                     <p>Enter your personal details and start journey with us</p>
+                     <button class="registration-btn">Register Here</button>
+                    </div>
+                      <div class="login-form">
+                          <h2>Sign in</h2>
+                          <div class="social-icons">
+                              <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
+                              <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-linkedin"></i>
+                              </a>
+                              <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i>
+                                  
+                              </a>
+                              <a href="https://discord.gg/MdScmCsua6" target="_blank">
+                              <i class="fa-brands fa-discord"></i>
+                              </a>
+                          </div>
+                          <p>or use your account</p>
+
+                          <form action="#">
+                              <div class="input-field">
+                                     <label for="Email1">
+                                      <input type="email" name="#" id="Email1" placeholder="Email">
+                                     </label>
+                              </div>
+
+
+                              <div class="input-field">
+                                     <label for="password1">
+                                      <input type="password" name="#" id="password1" placeholder="password">
+                                     </label>
+                              </div>
+
+                              <div class="input-field">
+                                  <input type="submit" value="register">
+                              </div>
+                          </form>
+                      </div>
+               </div>
+           </div>
+             </div>
+            </section>
+        </main>
+    </div>
+    </header>
+    <script>
+        const user_con=document.querySelector('.user-container');
+        const regis_btn=document.querySelector('.registration-btn');
+        const login_btn=document.querySelector('.login-btn');
+
+        regis_btn.addEventListener('click',()=>{
+            user_con.classList.add('login-section-display')
+
+        })
+        login_btn.addEventListener('click',()=>{
+            user_con.classList.remove( 'login-section-display')
+        })
+
+
+    </script>
+</body>
+</html>
